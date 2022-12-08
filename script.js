@@ -37,25 +37,6 @@
 
 })(jQuery);
 
-
-if (window.localStorage.getItem('user') != null) {
-  var ContactFooter = document.querySelector(".contact")
-  ContactFooter.style.display = "none";
-  var registeredUser = document.querySelector(".registered")
-  registeredUser.style.display = "block";
-  var profileName = document.querySelector(".profile-name")
-  let data2 = JSON.parse(window.localStorage.getItem('user')).name;
-  profileName.textContent = data2;
-  var renderName = document.querySelector(".renderName");
-  var renderEmail = document.querySelector(".renderEmail");
-  var renderPhone = document.querySelector(".renderPhone");
-  var renderDescr = document.querySelector(".renderDescr");
-  renderName.textContent = data2;
-  renderEmail.textContent = JSON.parse(window.localStorage.getItem('user')).email;
-  renderPhone.textContent = JSON.parse(window.localStorage.getItem('user')).phone;
-  renderDescr.textContent = JSON.parse(window.localStorage.getItem('user')).description;
-}
-
 var lightButton = document.querySelector('.light-m-button');
 var darkButton = document.querySelector('.dark-m-button');
 var introBox = document.querySelector('.intro-box')
@@ -67,7 +48,7 @@ var aboutSection = document.querySelector("#one");
 var sectionBox = document.querySelector("#about-text");
 var skillsBox = document.querySelector('#skills');
 var threeBox = document.querySelector('#threee');
-var three_Box = document.querySelectorAll('#three-box');
+var two = document.querySelector('#two');
 
 function lightMode() {
   const person = {
@@ -88,7 +69,7 @@ function lightMode() {
   sectionBox.style.color = "black";
   skillsBox.style.backgroundColor = "gray";
   threeBox.style.backgroundColor = "gray";
-  three_Box.style.border = "10px solid gray";
+  two.style.backgroundColor = "gray"
 }
 
 function autoLightMode() {
@@ -106,7 +87,7 @@ function autoLightMode() {
   sectionBox.style.color = "black";
   skillsBox.style.backgroundColor = "gray";
   threeBox.style.backgroundColor = "gray";
-  three_Box.style.border = "10px solid gray";
+  two.style.backgroundColor = "gray"
 }
 
 function darkMode() {
@@ -127,7 +108,7 @@ function darkMode() {
   skillsBox.style.backgroundColor = "#222";
   threeBox.style.backgroundColor = "#222222";
   body.style.backgroundColor = "#333";
-  three_Box.style.border = "10px solid gray";
+  two.style.backgroundColor = "#222222"
 }
 
 function autoDarkMode() {
@@ -145,6 +126,7 @@ function autoDarkMode() {
   threeBox.style.backgroundColor = "#222222";
   body.style.backgroundColor = "#333";
   three_Box.style.border = "10px solid gray";
+  two.style.backgroundColor = "#222222"
 }
 
 var ruButton = document.querySelector('.ru-button')

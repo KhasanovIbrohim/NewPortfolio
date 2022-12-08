@@ -71,7 +71,7 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- <li class="light-m-button">
+                    <li class="light-m-button">
                         <a class="page-scroll nav-title" onclick="lightMode()" href="#lightmode">Light</a>
                     </li>
                     <li class="dark-m-button" style="display: none;">
@@ -82,7 +82,7 @@
                     </li>
                     <li class="en-button" style="display: none;">
                         <a class="page-scroll nav-title" onclick="toENG()" href="#engmode">EN</a>
-                    </li> -->
+                    </li>
                     <li>
                         <a data-toggle="modal" data-target="#alertLogin" class="page-scroll nav-title profile-name"
                             href="#"></a>
@@ -234,7 +234,8 @@
         <div class="container-fluid">
             <div class="row no-gutter" id="threee" style="background-color: #222222;">
                 <h2 class="text-primary" style="text-align: center; margin-bottom: 40px;">My Projects</h2>
-                <div id="three-box" style="border: 5px solid #222222;" class="col-lg-4 col-sm-6 yangiimg">
+                <div style="padding: 5px;"
+                    class="col-lg-4 col-sm-6 yangiimg projects-1-box">
                     <h2 class="text-primary" style="text-align: center; margin-bottom: 40px; font-size: 20px;"><a
                             style="color: white;" href="https://matrass-1.netlify.app/">Mattresses</a></h2>
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./img/matrasfull.png">
@@ -248,7 +249,7 @@
                         </div>
                     </a>
                 </div>
-                <div style="border: 5px solid #222222;" class="col-lg-4 col-sm-6">
+                <div style="padding: 5px;" class="col-lg-4 col-sm-6 projects-2-box">
                     <h2 class="text-primary" style="text-align: center; margin-bottom: 40px; font-size: 20px;"><a
                             style="color: white;" href="https://californiaphones.netlify.app/">California Phones</a>
                     </h2>
@@ -263,7 +264,7 @@
                         </div>
                     </a>
                 </div>
-                <div style="border: 5px solid #222222;" class="col-lg-4 col-sm-6">
+                <div style="padding: 5px;" class="col-lg-4 col-sm-6 projects-3-box">
                     <h2 class="text-primary" style="text-align: center; margin-bottom: 40px; font-size: 20px;"><a
                             style="color: white;" href="https://seriesxbox.netlify.app/">XBOX Series X</a></h2>
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./img/xboxfull.png">
@@ -277,7 +278,7 @@
                         </div>
                     </a>
                 </div>
-                <div style="border: 5px solid #222222;" class="col-lg-4 col-sm-6">
+                <div style="padding: 5px;" class="col-lg-4 col-sm-6 projects-4-box">
                     <h2 class="text-primary" style="text-align: center; margin-bottom: 40px; font-size: 20px;"><a
                             style="color: white;" href="https://realestatehouses.netlify.app/">Real Estate</a></h2>
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./img/RealEstatefull.png">
@@ -291,7 +292,7 @@
                         </div>
                     </a>
                 </div>
-                <div style="border: 5px solid #222222;" class="col-lg-4 col-sm-6">
+                <div style="padding: 5px;" class="col-lg-4 col-sm-6 projects-5-box">
                     <h2 class="text-primary" style="text-align: center; margin-bottom: 40px; font-size: 20px;"><a
                             style="color: white;" href="https://kbm-animals-clinic.netlify.app/">Vet Clinic</a></h2>
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./img/vetfull.jpg">
@@ -305,7 +306,7 @@
                         </div>
                     </a>
                 </div>
-                <div style="border: 5px solid #222222;" class="col-lg-4 col-sm-6">
+                <div style="padding: 5px;" class="col-lg-4 col-sm-6 projects-6-box">
                     <h2 class="text-primary" style="text-align: center; margin-bottom: 40px; font-size: 20px;"><a
                             style="color: white;" href="#soon">PlayStation Store</a></h2>
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal"
@@ -690,20 +691,25 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <h2 class="text-center">Your Information</h2>
-                    <div class="modal_name" style="display: flex; width: 80%; justify-content: space-around;margin-left: 10%;">
+                    <div class="modal_name"
+                        style="display: flex; width: 80%; justify-content: space-around;margin-left: 10%;">
                         <h3 class="text-center" style="color: #acacac;">Your name:</h3>
                         <h3 class="renderName text-center" style="color: #9c27b0;"></h3>
                     </div>
-                    <div class="modal_email" style="display: block; width: 80%; justify-content: space-around;margin-left: 10%;">
+                    <div class="modal_email"
+                        style="display: block; width: 80%; justify-content: space-around;margin-left: 10%;">
                         <h3 class="text-center" style="color: #acacac;">Your email:</h3>
                         <h3 class="renderEmail text-center" style="color: #9c27b0;"></h3>
                     </div>
-                    <div class="modal_phone" style="display: flex; width: 80%; justify-content: space-around;margin-left: 10%;">
+                    <div class="modal_phone"
+                        style="display: flex; width: 80%; justify-content: space-around;margin-left: 10%;">
                         <h3 class="text-center" style="color: #acacac;">Your phone:</h3>
                         <h3 class="renderPhone text-center" style="color: #9c27b0;"></h3>
                     </div>
-                    <button class="btn btn-primary btn-lg center-block clear_localStorage" style="margin-top: 20px;" onclick="clearLocalStorage()">Create new Account</button>
-                    <button class="btn btn-primary btn-lg center-block" style="margin-top: 20px;" data-dismiss="modal" aria-hidden="true"> Close
+                    <button class="btn btn-primary btn-lg center-block clear_localStorage" style="margin-top: 20px;"
+                        onclick="clearLocalStorage()">Create new Account</button>
+                    <button class="btn btn-primary btn-lg center-block" style="margin-top: 20px;" data-dismiss="modal"
+                        aria-hidden="true"> Close
                     </button>
                 </div>
             </div>
@@ -732,6 +738,25 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script
         src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js">
+    </script>
+    <script>
+        if (window.localStorage.getItem('user') != null) {
+            var ContactFooter = document.querySelector(".contact")
+            ContactFooter.style.display = "none";
+            var registeredUser = document.querySelector(".registered")
+            registeredUser.style.display = "block";
+            var profileName = document.querySelector(".profile-name")
+            let data2 = JSON.parse(window.localStorage.getItem('user')).name;
+            profileName.textContent = data2;
+            var renderName = document.querySelector(".renderName");
+            var renderEmail = document.querySelector(".renderEmail");
+            var renderPhone = document.querySelector(".renderPhone");
+            var renderDescr = document.querySelector(".renderDescr");
+            renderName.textContent = data2;
+            renderEmail.textContent = JSON.parse(window.localStorage.getItem('user')).email;
+            renderPhone.textContent = JSON.parse(window.localStorage.getItem('user')).phone;
+            renderDescr.textContent = JSON.parse(window.localStorage.getItem('user')).description;
+        }
     </script>
     <script src="./script.js"></script>
 </body>
