@@ -3,6 +3,17 @@ if (window.localStorage.getItem('user') != null) {
   ContactFooter.style.display = "none";
   var registeredUser = document.querySelector(".registered")
   registeredUser.style.display = "block";
+  var profileName = document.querySelector(".profile-name")
+  let data2 = JSON.parse(window.localStorage.getItem('user')).name;
+  profileName.textContent = data2;
+  var renderName = document.querySelector(".renderName");
+  var renderEmail = document.querySelector(".renderEmail");
+  var renderPhone = document.querySelector(".renderPhone");
+  var renderDescr = document.querySelector(".renderDescr");
+  renderName.textContent = data2;
+  renderEmail.textContent = JSON.parse(window.localStorage.getItem('user')).email;
+  renderPhone.textContent = JSON.parse(window.localStorage.getItem('user')).phone;
+  renderDescr.textContent = JSON.parse(window.localStorage.getItem('user')).description;
 }
 
 (function ($) {
@@ -233,34 +244,12 @@ function autoENG() {
   about_btn.textContent = "Watch my projects";
 }
 
+var profileName = document.querySelector(".profile-name")
 
-// const person = {
-//   name: "Obaseki Nosa",
-//   email: "Lagos",
-//   phone: ""
-// }
-
-// window.localStorage.setItem('user', JSON.stringify(person));
-var obj = [];
-// obj.push(JSON.parse(window.localStorage.getItem('user')))
-
-
-async function postData(url) {
-  const response = await fetch(url, {
-    method: 'POST',
-    mode: 'cors',
-    cache: 'no-cache',
-    credentials: 'same-origin',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    redirect: 'follow',
-    referrerPolicy: 'no-referrer',
-    body: JSON.stringify(obj[0])
-  });
-  return response.json();
+function clearLocalStorage(){
+  window.localStorage.clear();
+  window.location.reload();
 }
-
 
 function contactWithMe() {
   var name = document.getElementById("nameInp").value;
@@ -273,8 +262,6 @@ function contactWithMe() {
     phone: phone,
     description: description
   }
-  obj.push(person)
-  // postData('http://localhost:5000/post');
   window.localStorage.setItem('user', JSON.stringify(person));
   window.location.reload();
 }

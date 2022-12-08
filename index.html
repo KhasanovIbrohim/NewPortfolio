@@ -83,6 +83,10 @@
                     <li class="en-button" style="display: none;">
                         <a class="page-scroll nav-title" onclick="toENG()" href="#engmode">EN</a>
                     </li> -->
+                    <li>
+                        <a data-toggle="modal" data-target="#alertLogin" class="page-scroll nav-title profile-name"
+                            href="#"></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -466,7 +470,7 @@
                     <form class="contact-form row">
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" class="form-control" id="nameInp" placeholder="Name">
+                            <input type="text" class="form-control" id="nameInp" placeholder="Name, Surname">
                         </div>
                         <div class="col-md-4">
                             <label></label>
@@ -651,7 +655,7 @@
         </div>
     </div>
     <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
                     <h2 class="text-center">Nice Job!</h2>
@@ -677,6 +681,30 @@
                     <br />
                     <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK <i
                             class="ion-android-close"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="alertLogin" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="text-center">Your Information</h2>
+                    <div class="modal_name" style="display: flex; width: 80%; justify-content: space-around;margin-left: 10%;">
+                        <h3 class="text-center" style="color: #acacac;">Your name:</h3>
+                        <h3 class="renderName text-center" style="color: #9c27b0;"></h3>
+                    </div>
+                    <div class="modal_email" style="display: flex; width: 80%; justify-content: space-around;margin-left: 10%;">
+                        <h3 class="text-center" style="color: #acacac;">Your email:</h3>
+                        <h3 class="renderEmail text-center" style="color: #9c27b0;"></h3>
+                    </div>
+                    <div class="modal_phone" style="display: flex; width: 80%; justify-content: space-around;margin-left: 10%;">
+                        <h3 class="text-center" style="color: #acacac;">Your phone:</h3>
+                        <h3 class="renderPhone text-center" style="color: #9c27b0;"></h3>
+                    </div>
+                    <button class="btn btn-primary btn-lg center-block clear_localStorage" style="margin-top: 20px;" onclick="clearLocalStorage()">Create new Account</button>
+                    <button class="btn btn-primary btn-lg center-block" style="margin-top: 20px;" data-dismiss="modal" aria-hidden="true"> Close
+                    </button>
                 </div>
             </div>
         </div>
