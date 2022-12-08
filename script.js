@@ -1,21 +1,3 @@
-if (window.localStorage.getItem('user') != null) {
-  var ContactFooter = document.querySelector(".contact")
-  ContactFooter.style.display = "none";
-  var registeredUser = document.querySelector(".registered")
-  registeredUser.style.display = "block";
-  var profileName = document.querySelector(".profile-name")
-  let data2 = JSON.parse(window.localStorage.getItem('user')).name;
-  profileName.textContent = data2;
-  var renderName = document.querySelector(".renderName");
-  var renderEmail = document.querySelector(".renderEmail");
-  var renderPhone = document.querySelector(".renderPhone");
-  var renderDescr = document.querySelector(".renderDescr");
-  renderName.textContent = data2;
-  renderEmail.textContent = JSON.parse(window.localStorage.getItem('user')).email;
-  renderPhone.textContent = JSON.parse(window.localStorage.getItem('user')).phone;
-  renderDescr.textContent = JSON.parse(window.localStorage.getItem('user')).description;
-}
-
 (function ($) {
   "use strict";
 
@@ -55,6 +37,24 @@ if (window.localStorage.getItem('user') != null) {
 
 })(jQuery);
 
+
+if (window.localStorage.getItem('user') != null) {
+  var ContactFooter = document.querySelector(".contact")
+  ContactFooter.style.display = "none";
+  var registeredUser = document.querySelector(".registered")
+  registeredUser.style.display = "block";
+  var profileName = document.querySelector(".profile-name")
+  let data2 = JSON.parse(window.localStorage.getItem('user')).name;
+  profileName.textContent = data2;
+  var renderName = document.querySelector(".renderName");
+  var renderEmail = document.querySelector(".renderEmail");
+  var renderPhone = document.querySelector(".renderPhone");
+  var renderDescr = document.querySelector(".renderDescr");
+  renderName.textContent = data2;
+  renderEmail.textContent = JSON.parse(window.localStorage.getItem('user')).email;
+  renderPhone.textContent = JSON.parse(window.localStorage.getItem('user')).phone;
+  renderDescr.textContent = JSON.parse(window.localStorage.getItem('user')).description;
+}
 
 var lightButton = document.querySelector('.light-m-button');
 var darkButton = document.querySelector('.dark-m-button');
