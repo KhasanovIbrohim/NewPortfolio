@@ -163,7 +163,7 @@ function toRU() {
   nav_tools.textContent = "Инструменты";
   nav_contact.textContent = "Контакт";
   nav_brand.textContent = "Хасанов Иброхим";
-  about_text.textContent = "Меня зовут... Иброхим. Мне несколько лет, я интересуюсь программированием более 3 лет, в настоящее время я Full-Stack разработчик. Я знаю такие языки, как JavaScript, NodeJS. Я студент..."
+  about_text.textContent = "Меня зовут... Иброхим. Я интересуюсь программированием более 3 лет, в настоящее время я Full-Stack разработчик. Я знаю такие языки, как JavaScript, NodeJS. Я студент..."
   about_title.textContent = "Привет!";
   about_btn.textContent = "Посмотри мои проэкты"
 }
@@ -181,7 +181,7 @@ function autoRu() {
   nav_tools.textContent = "Инструменты";
   nav_contact.textContent = "Контакт";
   nav_brand.textContent = "Хасанов Иброхим";
-  about_text.textContent = "Меня зовут... Иброхим. Мне несколько лет, я интересуюсь программированием более 3 лет, в настоящее время я Full-Stack разработчик. Я знаю такие языки, как JavaScript, NodeJS. Я студент..."
+  about_text.textContent = "Меня зовут... Я интересуюсь программированием более 3 лет, в настоящее время я Full-Stack разработчик. Я знаю такие языки, как JavaScript, NodeJS. Я студент..."
   about_title.textContent = "Привет!";
   about_btn.textContent = "Посмотри мои проэкты"
 }
@@ -203,7 +203,7 @@ function toENG() {
   nav_tools.textContent = "My tools";
   nav_contact.textContent = "Contact";
   nav_brand.textContent = "Khasanov Ibrohim";
-  about_text.textContent = "My name is... Ibrohim I am a few years old, I have been interested in programming for over 3 years and I am currently a Full-Stack developer I know languages like JavaScript, NodeJS And Im a Student ..."
+  about_text.textContent = "My name is... Ibrohim I have been interested in programming for over 3 years and I am currently a Full-Stack developer I know languages like JavaScript, NodeJS And Im a Student ..."
   about_title.textContent = "Hi!"
   about_btn.textContent = "Watch my projects";
 }
@@ -221,7 +221,7 @@ function autoENG() {
   nav_tools.textContent = "My tools";
   nav_contact.textContent = "Contact";
   nav_brand.textContent = "Khasanov Ibrohim";
-  about_text.textContent = "My name is... Ibrohim I am a few years old, I have been interested in programming for over 3 years and I am currently a Full-Stack developer I know languages like JavaScript, NodeJS And Im a Student ..."
+  about_text.textContent = "My name is... Ibrohim I have been interested in programming for over 3 years and I am currently a Full-Stack developer I know languages like JavaScript, NodeJS And Im a Student ..."
   about_title.textContent = "Hi!"
   about_btn.textContent = "Watch my projects";
 }
