@@ -253,7 +253,7 @@ header {
     color: #fff;
     width: 100%;
     background-color: #c9c9c9;
-    background-image: url('https://img2.akspic.ru/crops/5/1/4/9/6/169415/169415-rastenie-atmosfera-oblako-prirodnyj_landshaft-okruzhayushchaya_sreda-3840x2160.jpg');
+    background-image: url('./img/bg2.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
